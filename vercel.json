@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/about", "destination": "/bt_driving-school.html", "permanent": true },
+    { "source": "/services", "destination": "/bt-driving_school.html", "permanent": true },
+    { "source": "/prices", "destination": "/bt-driving_school.html", "permanent": true },
+    { "source": "/contact", "destination": "/bt_driving_school.html", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.(css|js|png|jpg|jpeg|svg|webp|woff2)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}

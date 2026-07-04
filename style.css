@@ -93,7 +93,7 @@ nav{
 nav.scrolled{border-color:var(--line);box-shadow:0 6px 22px -20px rgba(0,0,0,.6)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;height:82px}
 .brand img{height:56px;width:auto;max-width:212px;object-fit:contain}
-.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links{display:flex;align-items:center;gap:24px}
 .nav-links a{font-size:.92rem;font-weight:600;position:relative;padding:5px 0}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:3px;background:var(--red);transition:width .2s ease}
 .nav-links a:hover::after,.nav-links a.active::after{width:100%}
@@ -140,6 +140,19 @@ nav.scrolled{border-color:var(--line);box-shadow:0 6px 22px -20px rgba(0,0,0,.6)
 .feature-card .fc-go{display:inline-flex;align-items:center;gap:7px;background:#fff;color:var(--red);font-weight:700;font-size:.9rem;padding:10px 18px;border-radius:6px;transition:gap .16s ease}
 .feature-card:hover .fc-go{gap:11px}
 @media(max-width:680px){.feature-grid{grid-template-columns:1fr}}
+@media(max-width:1080px){.nav-cta .btn-out-d{display:none}}
+
+/* gallery */
+.gallery{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery a{position:relative;display:block;overflow:hidden;border-radius:12px;border:1px solid var(--line);background:var(--card);aspect-ratio:4/3;box-shadow:0 18px 40px -30px rgba(0,0,0,.4)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.gallery a:hover img{transform:scale(1.06)}
+.gallery a::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(18,12,13,.4));opacity:0;transition:opacity .3s ease}
+.gallery a:hover::after{opacity:1}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:14px 16px;color:#fff;font-weight:600;font-size:.9rem;opacity:0;transform:translateY(6px);transition:opacity .3s ease,transform .3s ease}
+.gallery a:hover figcaption{opacity:1;transform:translateY(0)}
+@media(max-width:820px){.gallery{grid-template-columns:repeat(2,1fr);gap:12px}}
+@media(max-width:520px){.gallery{grid-template-columns:1fr}}
 .burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
 .burger span{width:25px;height:3px;background:var(--ink);border-radius:2px;transition:.25s}
 .burger.open span:nth-child(1){transform:translateY(8px) rotate(45deg)}

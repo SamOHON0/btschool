@@ -1,0 +1,11 @@
+# Original full-size Facebook downloads (source only).
+# Optimised WebP versions live in images/gallery and are what deploy.
+fbphotos/
+
+# Old downloaded draft
+index (35).html
+
+# OS cruft
+.DS_Store
+Thumbs.db
+images/_synctest.txt

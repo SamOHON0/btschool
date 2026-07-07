@@ -520,7 +520,7 @@ footer{background:var(--red-deep);color:#f3c9cc;padding:66px 0 28px}
   .hero .wrap{padding-top:40px;padding-bottom:14px}
   .hero-cta{gap:10px;flex-wrap:nowrap}
   .hero-cta .btn{flex:1 1 0;justify-content:center;text-align:center;white-space:normal;line-height:1.15;padding:11px 10px;font-size:.8rem;gap:6px}
-  .hero-fleet-mobile{display:block;width:auto;height:auto;margin:26px -26px 0;box-shadow:0 16px 34px -24px rgba(0,0,0,.6)}
+  .hero-fleet-mobile{display:block;width:calc(100% + 52px);height:auto;margin:26px -26px 0;box-shadow:0 16px 34px -24px rgba(0,0,0,.6)}
   .hero p.lead{text-shadow:none}
   .nav-links{display:none}
   .nav-cta .btn-out-d{display:none}

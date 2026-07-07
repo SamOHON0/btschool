@@ -172,10 +172,7 @@ nav.scrolled{border-color:var(--line);box-shadow:0 6px 22px -20px rgba(0,0,0,.6)
 /* ===== HERO (home) ===== */
 .hero{position:relative;min-height:600px;display:flex;align-items:center;color:#fff;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:#141318 center/cover no-repeat}
-.hero-bg::after{
-  content:"";position:absolute;inset:0;
-  background:linear-gradient(100deg,rgba(18,12,13,.9) 0%,rgba(18,12,13,.68) 30%,rgba(18,12,13,.3) 55%,rgba(18,12,13,.06) 100%);
-}
+.hero-inner{text-shadow:0 2px 18px rgba(0,0,0,.5),0 1px 3px rgba(0,0,0,.42)}
 .hero .wrap{position:relative;z-index:2;padding-top:78px;padding-bottom:86px}
 .hero-inner{max-width:660px}
 .hero .eyebrow,.hero h1 .l1,.hero h1 .l2,.hero .lead,.hero-cta{opacity:0;animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
@@ -513,7 +510,6 @@ footer{background:var(--red-deep);color:#f3c9cc;padding:66px 0 28px}
 @media(max-width:680px){
   .sec{padding:64px 0}
   .hero{min-height:auto}
-  .hero-bg::after{background:linear-gradient(180deg,rgba(18,12,13,.86),rgba(18,12,13,.94))}
   .nav-links{display:none}
   .nav-cta .btn-out-d{display:none}
   .burger{display:flex}

@@ -9,3 +9,6 @@ index (35).html
 .DS_Store
 Thumbs.db
 images/_synctest.txt
+
+# Temp base64 transfer scratch files
+*.b64
